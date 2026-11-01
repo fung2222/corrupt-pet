@@ -33,11 +33,37 @@ body {
   gap: 10px;
 }
 
-.topbar { display: flex; align-items: center; justify-content: space-between; }
-.brand { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-zh { font-weight: 800; letter-spacing: 0.12em; color: var(--magenta); font-size: 1.05rem; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 44px; gap: 8px;
+}
+.top-actions { display: flex; gap: 8px; align-items: center; flex: 0 0 auto; }
+.brand { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
+.brand-zh { font-weight: 700; letter-spacing: 0.12em; color: var(--magenta); font-size: 1.05rem; }
 .brand-en { font-size: 0.68rem; letter-spacing: 0.28em; color: var(--cyan); opacity: 0.85; }
-.top-actions { display: flex; gap: 8px; }
+.ibar {
+  width: 44px; height: 44px; min-width: 44px; padding: 9px; margin: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(10,4,30,.55);
+  border: 1px solid color-mix(in srgb, var(--cyan) 60%, transparent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--cyan) 35%, transparent);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  cursor: pointer; color: var(--cyan);
+}
+#btn-home { border-color: color-mix(in srgb, var(--magenta) 55%, transparent); color: var(--magenta); }
+.ibar svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.sheet {
+  position: fixed; inset: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(5,1,15,.72); padding: 18px;
+}
+.sheet.hidden { display: none; }
+.sheet-card {
+  width: min(420px, 94vw); background: #12081c; border: 1px solid color-mix(in srgb, var(--cyan) 40%, transparent);
+  padding: 18px; display: flex; flex-direction: column; gap: 12px;
+}
+.sheet-card h2 { margin: 0; font-size: 1.4rem; letter-spacing: 0.08em; }
+.sheet-card p { margin: 0; line-height: 1.55; color: var(--cyan-soft); }
 .chip {
   border: 1px solid color-mix(in srgb, var(--cyan) 45%, transparent);
   background: color-mix(in srgb, var(--gun-deep) 85%, black);

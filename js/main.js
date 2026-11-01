@@ -347,6 +347,27 @@ document.getElementById('btn-reset').addEventListener('click', () => {
     rehatch();
   }
 });
+document.getElementById('btn-home').addEventListener('click', () => {
+  location.href = new URL('../cyber-arcade/', location.href).href;
+});
+document.getElementById('btn-howto').addEventListener('click', () => {
+  const en = state.lang === 'en';
+  document.getElementById('howto-title').textContent = en ? 'HOW TO PLAY' : '玩法';
+  document.getElementById('howto-copy').textContent = en
+    ? 'Tap the egg to hatch. Feed, neglect, inject, jack-in, or punish. Meters drift while you are away. House returns to the arcade. Gear holds language and mute.'
+    : '輕觸蛋孵化。餵食、忽視、注入、插線或懲罰。離開期間數值會自己變。左上返回街機主頁，齒輪入面改語言同靜音。';
+  document.getElementById('howto-close').textContent = en ? 'GOT IT' : '知道啦';
+  document.getElementById('sheet-howto').classList.remove('hidden');
+});
+document.getElementById('howto-close').addEventListener('click', () => {
+  document.getElementById('sheet-howto').classList.add('hidden');
+});
+document.getElementById('btn-gear').addEventListener('click', () => {
+  document.getElementById('sheet-gear').classList.remove('hidden');
+});
+document.getElementById('gear-close').addEventListener('click', () => {
+  document.getElementById('sheet-gear').classList.add('hidden');
+});
 document.getElementById('btn-lang').addEventListener('click', () => {
   state.lang = state.lang === 'zh' ? 'en' : 'zh';
   if (state.form === 'CHIP_EGG') setStatus(S(state).eggPrompt);
