@@ -2,15 +2,16 @@
 
 Evil cyberpunk Tamagotchi MVP for Cyber Hub.
 
-**Play:** https://fung2222.github.io/corrupt-pet/
+**Play:** https://fung2222.github.io/corrupt-pet/?v=0.1.2
 
 Raise a cyber pet that gets worse: feed / inject / punish / jack-in. Short care sessions, long corruption. Branch forms; can melt.
 
 ## Changelog
 
+- **v0.1.2** — Soft body fills + neon rim glow + deeper multi-layer cityscape (parallax / fog / dust). Still Canvas 2D procedural; no Three.js.
 - **v0.1.1** — Q/chibi fun silhouettes + far cyber cityscape depth BG (Roy art-tone pass).
 
-## MVP vertical slice (v0.1.1)
+## MVP vertical slice (v0.1.2)
 
 1. `CHIP_EGG` idle + tap to hatch  
 2. `LARVA` silhouette + 5 meters (hunger, stability, heat, loyalty, glitch)  
@@ -20,11 +21,11 @@ Raise a cyber pet that gets worse: feed / inject / punish / jack-in. Short care 
 7. Melt fail path + re-hatch  
 8. Offline simmer via `localStorage` timestamps  
 
-**Deferred:** Neon Idol, Black ICE Hound, Black Core apex, unlock toys/skins, monetization, Snake/tip changes, hub homepage card.
+**Deferred:** Neon Idol, Black ICE Hound, Black Core apex, unlock toys/skins, monetization, Snake/tip changes.
 
 ## Tech
 
-Static GitHub Pages. Canvas + CSS + WebAudio procedural art. Locked Hub palette only. Phone-first.
+Static GitHub Pages. Canvas + CSS + WebAudio procedural art. Locked Hub palette only. Phone-first. Soft fills + neon edge glow; no true 3D / mesh.
 
 ## Local
 

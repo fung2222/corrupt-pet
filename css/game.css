@@ -61,7 +61,7 @@ body {
 #pet {
   width: min(72vw, 320px); height: auto; max-height: 42vh;
   touch-action: manipulation; cursor: pointer;
-  filter: drop-shadow(0 8px 18px color-mix(in srgb, var(--magenta) 28%, transparent));
+  filter: drop-shadow(0 6px 14px color-mix(in srgb, var(--magenta) 32%, transparent)) drop-shadow(0 0 10px color-mix(in srgb, var(--cyan) 22%, transparent));
 }
 .form-tag {
   position: absolute; top: 10px; left: 12px;
