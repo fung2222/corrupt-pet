@@ -6,7 +6,11 @@ Evil cyberpunk Tamagotchi MVP for Cyber Hub.
 
 Raise a cyber pet that gets worse: feed / inject / punish / jack-in. Short care sessions, long corruption. Branch forms; can melt.
 
-## MVP vertical slice (v0.1.0)
+## Changelog
+
+- **v0.1.1** — Q/chibi fun silhouettes + far cyber cityscape depth BG (Roy art-tone pass).
+
+## MVP vertical slice (v0.1.1)
 
 1. `CHIP_EGG` idle + tap to hatch  
 2. `LARVA` silhouette + 5 meters (hunger, stability, heat, loyalty, glitch)  
