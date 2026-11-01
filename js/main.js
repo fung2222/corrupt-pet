@@ -348,7 +348,7 @@ document.getElementById('btn-reset').addEventListener('click', () => {
   }
 });
 document.getElementById('btn-home').addEventListener('click', () => {
-  location.href = new URL('../cyber-arcade/lab-kqsverjfjd/hub/', location.href).href;
+  location.href = new URL('../cyber-arcade/', location.href).href;
 });
 document.getElementById('btn-howto').addEventListener('click', () => {
   const en = state.lang === 'en';
