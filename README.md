@@ -2,12 +2,13 @@
 
 Evil cyberpunk Tamagotchi MVP for Cyber Hub.
 
-**Play:** https://fung2222.github.io/corrupt-pet/?v=0.1.2
+**Play:** https://fung2222.github.io/corrupt-pet/?v=0.1.4 · **Privacy:** https://fung2222.github.io/corrupt-pet/privacy.html
 
 Raise a cyber pet that gets worse: feed / inject / punish / jack-in. Short care sessions, long corruption. Branch forms; can melt.
 
 ## Changelog
 
+- **v0.1.4** — Privacy policy page added and linked from the gear sheet; play URL synced to the live cache query.
 - **v0.1.2** — Soft body fills + neon rim glow + deeper multi-layer cityscape (parallax / fog / dust). Still Canvas 2D procedural; no Three.js.
 - **v0.1.1** — Q/chibi fun silhouettes + far cyber cityscape depth BG (Roy art-tone pass).
 

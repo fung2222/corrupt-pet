@@ -154,6 +154,7 @@ body {
   background: none; border: none; color: var(--magenta); cursor: pointer;
   font-size: 0.65rem; letter-spacing: 0.1em; text-decoration: underline;
 }
+.privacy-link { display: inline-block; margin-top: 12px; }
 
 .modal {
   position: fixed; inset: 0; z-index: 40;
